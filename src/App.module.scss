@@ -1,0 +1,42 @@
+.files {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, 200px);
+  grid-gap: 30px;
+  flex-grow: 1;
+  
+  .file {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+
+    .downloadLink {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.notifications {
+  .notification {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: slategray;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3ce03c;
+  }
+}
