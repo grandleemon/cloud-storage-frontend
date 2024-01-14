@@ -57,7 +57,7 @@ function App() {
         },
       });
       setLoading(false);
-      setLoadingProgress(false);
+      setLoadingProgress(0);
 
       if (file) setNotifications(prev => [...prev, file?.name]);
 
