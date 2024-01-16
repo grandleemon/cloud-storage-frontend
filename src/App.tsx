@@ -88,7 +88,7 @@ function App() {
     <div>
       {loading ?
         <>
-          <div className={styles.loadingProgress} style={{ width: loadingProgress + "px" }} />
+          <div className={styles.loadingProgress} style={{ width: loadingProgress + "%" }} />
           <div className={styles.loadingScreen}>loading...</div>
         </>
         : null
